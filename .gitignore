@@ -1,0 +1,7 @@
+node_modules
+coverage
+built/
+.env
+.idea
+secret.yml
+*.tgz

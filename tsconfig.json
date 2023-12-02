@@ -1,0 +1,39 @@
+{
+	"extends": "@tsconfig/strictest",
+	"compilerOptions": {
+		"lib": [
+			"ESNext"
+		],
+		"incremental": false,
+		"target": "ESNext",
+		"module": "NodeNext",
+		"rootDir": ".",
+		"typeRoots": [
+			"src/@types",
+			"./node_modules/@types",
+		],
+		"baseUrl": ".",
+		"outDir": "./built",
+		"paths": {
+			"@/*": [
+				"src/*"
+			],
+			"@modules/*": [
+				"src/modules/*"
+			],
+			"@config/*": [
+				".config/*"
+			],
+			"@utils/*": [
+				"src/utils/*"
+			]
+		},
+		"noUnusedLocals": false,
+		"noUnusedParameters": false
+	},
+	"include": [
+		"src",
+		"node_modules/vitest/globals.d.ts",
+		"vite.config.ts"
+	],
+}
